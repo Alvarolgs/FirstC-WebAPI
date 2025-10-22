@@ -1,18 +1,13 @@
-using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Threading.Tasks;
 using Microsoft.AspNetCore.Mvc;
 
 using api.Data;
 using api.Mappers;
 using api.Dtos.Stock;
-using Microsoft.EntityFrameworkCore;
 using api.Interfaces;
 
 namespace api.Controllers
 {
-    [Route("api/stock")]
+    [Route("api/stocks")]
     [ApiController]
     public class StockController : ControllerBase
     {
