@@ -21,13 +21,22 @@ namespace api.Mappers
             };
         }
 
-        public static Comment ToCommentFromCreateDTO(this CreateCommentRequestDto createCommentDto)
+        public static Comment ToCommentFromCreateDTO(this CreateCommentRequestDto createCommentDto, int stockId)
         {
             return new Comment
             {
                 Title = createCommentDto.Title,
                 Content = createCommentDto.Content,
-                CreatedAt = createCommentDto.CreatedAt
+                StockId = stockId
+            };
+        }
+
+        public static Comment ToCommentFromUpdateDTO(this UpdateCommentRequestDto createCommentDto)
+        {
+            return new Comment
+            {
+                Title = createCommentDto.Title,
+                Content = createCommentDto.Content
             };
         }
         
