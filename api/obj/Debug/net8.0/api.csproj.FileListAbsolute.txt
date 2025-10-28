@@ -277,3 +277,5 @@ C:\Users\alvar\OneDrive\Área de Trabalho\C#\FirstC#WebAPI\api\bin\Debug\net8.0\
 C:\Users\alvar\OneDrive\Área de Trabalho\C#\FirstC#WebAPI\api\bin\Debug\net8.0\Microsoft.AspNetCore.Mvc.NewtonsoftJson.dll
 C:\Users\alvar\OneDrive\Área de Trabalho\C#\FirstC#WebAPI\api\bin\Debug\net8.0\Newtonsoft.Json.dll
 C:\Users\alvar\OneDrive\Área de Trabalho\C#\FirstC#WebAPI\api\bin\Debug\net8.0\Newtonsoft.Json.Bson.dll
+C:\Users\alvar\OneDrive\Área de Trabalho\C#\FirstC#WebAPI\api\bin\Debug\net8.0\Microsoft.AspNetCore.Authentication.JwtBearer.dll
+C:\Users\alvar\OneDrive\Área de Trabalho\C#\FirstC#WebAPI\api\bin\Debug\net8.0\Microsoft.AspNetCore.Identity.EntityFrameworkCore.dll
