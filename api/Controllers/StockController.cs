@@ -4,6 +4,7 @@ using api.Data;
 using api.Mappers;
 using api.Dtos.Stock;
 using api.Interfaces;
+using api.Helpers;
 
 namespace api.Controllers
 {
@@ -20,12 +21,12 @@ namespace api.Controllers
         }
 
         [HttpGet]
-        public async Task<IActionResult> GetAll()
+        public async Task<IActionResult> GetAll([FromQuery]QueryObject query)
         {
             if (!ModelState.IsValid)
                 return BadRequest(ModelState);
 
-            var stocks = await _stockRepository.GetAllAsync();
+            var stocks = await _stockRepository.GetAllAsync(query);
 
             var stockDtos = stocks.Select(stock => stock.ToStockDto());
             
@@ -79,7 +80,7 @@ namespace api.Controllers
         {
             if (!ModelState.IsValid)
                 return BadRequest(ModelState);
-                
+
             var stock = await _stockRepository.DeleteAsync(id);
             if (stock == null)
                 return NotFound();
